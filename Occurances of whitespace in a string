@@ -1,0 +1,12 @@
+//count number of whitespaces in a string
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    string s;
+    cout << "enter the string ";
+    getline(cin,s);
+    int countt = count(s.begin(),s.end(), ' ');
+    cout << "the number of whitespace occurances are = " << countt;
+    return 0;
+
+}
