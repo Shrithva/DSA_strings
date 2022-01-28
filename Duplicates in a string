@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+void printDuplicate( string str){
+    map<char,int> dupmap;
+    for(int i=0; i< str.length(); i++){
+        dupmap[str[i]]++;
+    }
+
+    for( auto it : dupmap){
+        if(it.second > 1){
+            cout << " the character thats repeated = " << it.first << " the occurance count = " << it.second << endl;
+        }
+    }
+}
+
+int main(){
+    string s = "shrithva";
+    printDuplicate(s);
+    return 0;
+}
